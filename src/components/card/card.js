@@ -1,10 +1,12 @@
 import logo from '../../img/img1.jpg';
-import star from '../../img/star.svg'
+import star from '../../img/star.svg';
 import './card.css';
+import {Link} from 'react-router-dom';
 
-const Card = ({name, stars, minPrice, timeDelivery, food}) => {
+const Card = ({name, stars, minPrice, timeDelivery, food, id}) => {
+    // let idStr = id +'';
     return (
-        <a href="№" className="card wow fadeInUp" data-wow-delay="0.2s">
+        <Link to='/1'  className="card wow fadeInUp" data-wow-delay="0.2s">
             <img src={logo} alt="Ciao Pizza" className="card-image" alt='img'/>
             <div className="card-text">
                 <div className="card-heading">
@@ -22,7 +24,7 @@ const Card = ({name, stars, minPrice, timeDelivery, food}) => {
                     <div className="category">{food}</div>
                 </div>
             </div>
-        </a>
+        </Link>
     )
 }
 export default Card;

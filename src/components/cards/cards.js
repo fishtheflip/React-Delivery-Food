@@ -2,7 +2,8 @@ import Card from '../card/card';
 import './cards.css';
 const Cards = ({data}) => {
     const card = data.map((item)=>{
-        return <Card key={item.id} 
+        return <Card key={item.id}
+                id={item.id}
                 name={item.name} 
                 stars={item.stars} 
                 minPrice={item.minPrice} 
