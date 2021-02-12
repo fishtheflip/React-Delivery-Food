@@ -1,9 +1,9 @@
 import './restarants-card.css';
 import RestaurantCard from '../restaurant-card/restaurant-card'
 
-const RestaurantCards = ({data}) =>{
+const RestaurantCards = ({data, num}) =>{
     console.log(data);
-    const card = data[1].goods.map((item)=>{
+    const card = data[num].goods.map((item)=>{
         return <RestaurantCard
                 key={item.id}
                 img={item.img}

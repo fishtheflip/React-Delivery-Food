@@ -1,10 +1,14 @@
+import {Link} from 'react-router-dom'
 
-const Button = ({text, alt, imgClass, btnClass, imgLogo}) =>{
+const Button = ({text, alt, imgClass, btnClass, imgLogo, path}) =>{
     return(
-        <buttton className={ ['button', btnClass].join(' ')}>
-            <img  className={imgClass} src={'/img/' + imgLogo } alt={alt}/>
-            <span className="button-text">{text }</span>
-        </buttton>
+        <Link className="link" to={path}>        
+            <button href="!#" className={ ['button', btnClass].join(' ')}>
+                <img  className={imgClass} src={'/img/' + imgLogo } alt={alt}/>
+                <span className="button-text">{text }</span>
+            </button>
+    </Link>
+
     )
 };
 
