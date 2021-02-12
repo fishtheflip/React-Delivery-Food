@@ -48,9 +48,9 @@ const App = () => {
                             }}>
                     </Route>
 
-                    <Footer/>
+                    
             </Switch>
-
+            <Footer/>
 
                 
         </Router>

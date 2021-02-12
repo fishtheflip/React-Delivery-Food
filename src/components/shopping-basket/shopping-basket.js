@@ -1,6 +1,11 @@
+import ShoppingBasketHeader from '../shopping-basket-header/shopping-basket-header';
+import './shopping-basket.css';
+
 const ShoppingBasket = () =>{
     return (
-        <div><h1>SHOP</h1></div>
+        <div className='container'>
+            <ShoppingBasketHeader/>
+        </div>
     );
 };
 

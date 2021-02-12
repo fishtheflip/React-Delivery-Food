@@ -1,0 +1,30 @@
+.shopping-header{
+    display: flex;
+    justify-content: space-between;
+}
+.main-shop{
+    display: flex;
+    align-items: center;
+}
+.shop-title{
+    margin-left: 20px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 39px;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+.delete-field{
+    display: flex;
+    align-items: center;
+    height: 20px;
+    width: 20px;
+}
+.delete-title{
+    color: #B6B6B6;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+}
