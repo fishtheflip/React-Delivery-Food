@@ -1,11 +1,9 @@
-// import user from '../../img/user.svg';
-// import shop from '../../img/shop.svg';
 
-const Button = ({text, alt, src, imgClass, btnClass}) =>{
+const Button = ({text, alt, imgClass, btnClass, imgLogo}) =>{
     return(
         <buttton className={ ['button', btnClass].join(' ')}>
-            <img  className={imgClass} alt={alt}/>
-            <span className="button-text">{text}</span>
+            <img  className={imgClass} src={'/img/' + imgLogo } alt={alt}/>
+            <span className="button-text">{text }</span>
         </buttton>
     )
 };

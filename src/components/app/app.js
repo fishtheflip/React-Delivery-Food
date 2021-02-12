@@ -1,28 +1,24 @@
 import Container from '../container/container';
 import Main from '../main/main';
 import Footer from '../footer/footer';
-import React from 'react';
+import React, {useState} from 'react';
 import data from '../../data/data';
 import RestaurantPage from '../restaurant-page/restaurant-page';
-import {BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
 
 
 
 
 const App = () => {
+    const  [restourantId, setrestourantId] = useState('0');
     return(
         <React.Fragment>
                 <Container/>
-                <Router>
-                    <Switch>
-                        <Route path='/' component={()=> <Main data={data}/>} >
-                        </Route>
 
-                        {/* <Route exact path='/1' component={RestaurantPage}>
-                        
-                        </Route> */}
-                    </Switch>
-                </Router>
+                         
+                         <Main data={data}/> 
+                        <RestaurantPage data={data} resId={'3'}/>
+
                 <Footer/>
         </React.Fragment>
     )

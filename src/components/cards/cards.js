@@ -8,7 +8,8 @@ const Cards = ({data}) => {
                 stars={item.stars} 
                 minPrice={item.minPrice} 
                 timeDelivery={item.timeDelivery} 
-                food={item.food}/>
+                food={item.food}
+                img={item.img}/>
     })
     return(
         <div className="cards">

@@ -1,9 +1,16 @@
 import RestaurantPageHeader from '../restaurant-page-header/restaurant-page-header';
-const RestaurantPage = (data) =>{
+import RestaurantCards from '../restarants-cards/restarants-card'
+
+const RestaurantPage = ({data, resId}) =>{
     return(
-        <section>
-            <RestaurantPageHeader data={data}/>
-        </section>
+        <div className='main'>
+            <div className='container'>
+                <section className='restaurants'>
+                    <RestaurantPageHeader data={data} num={resId}/>
+                    <RestaurantCards data={data}/>
+                </section>
+            </div>
+        </div>
     )
 };
 

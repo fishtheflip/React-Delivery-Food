@@ -8,4 +8,5 @@ const Restaurants =({data})=>{
         </section>
     )
 };
-export default Restaurants
+export default Restaurants;
+

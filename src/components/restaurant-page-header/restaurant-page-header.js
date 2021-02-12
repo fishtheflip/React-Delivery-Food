@@ -1,16 +1,16 @@
 import './restaurant-page-header.css';
 
-const RestaurantPageHeader = () =>{
+const RestaurantPageHeader = ({data, num}) =>{
     return (
         <div className="section-heading">
-        <h1 className="section-title">Ciao Pizza</h1>
+        <h1 className="section-title">{data[num].name}</h1>
         <div className="card-info card-res">
             <div className="rating">
                 <img src="img/star.svg" alt="rating" className="rating-star"/>
-                4,7
+                {data[num].stars}
             </div>
-            <div className="price"> От 1400₸</div>
-            <div className="category">Суши</div>
+            <div className="price"> От {data[num].minPrice}₸</div>
+            <div className="category">{data[num].food}</div>
         </div>
     </div>
     )
