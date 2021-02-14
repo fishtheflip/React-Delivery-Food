@@ -7,10 +7,11 @@ import ShoppingBasket from '../shopping-basket/shopping-basket';
 import {
   BrowserRouter as Router,
   Switch,
-  Route, Link
+  Route
   
-} from "react-router-dom";
+    } from "react-router-dom";
 import RawMaterial from '../raw-material/raw-material';
+import EmptyShoppingBasket from '../empty-shopping-basket.js/empty-shopping-basket';
 
 
 
@@ -39,6 +40,10 @@ const App = () => {
                     <Route exact path="/raw">
                         <RawMaterial/>
                     </Route>
+                    <Route exact path="/empty">
+                        <EmptyShoppingBasket/>
+                    </Route>
+
 
                     <Route  path={'/:id'} 
                             render={({match})=>{

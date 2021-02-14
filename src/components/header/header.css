@@ -58,6 +58,10 @@
 .button-cadr-text{
 	margin-right: 10px;
 }
+.button-dark{
+	background:#080808;
+	color:#FFFFFF
+}
 .link{
 	text-decoration: none
 }
