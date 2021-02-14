@@ -17,7 +17,7 @@ const EmptyShoppingBasket = ()=>{
                 </label>
             </div>
             <div className="empty-basket-img">
-                <img src="/img/empty-basket.png"/>
+                <img src="/img/empty-basket.png" alt="empty"/>
             </div>
         </section>
     );

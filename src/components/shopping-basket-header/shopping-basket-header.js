@@ -1,5 +1,3 @@
-import { Component } from "react";
-
 import './shopping-basket-header.css';
 
 const ShoppingBasketHeader = () =>{

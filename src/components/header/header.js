@@ -10,8 +10,8 @@ const Header = () => {
 				    </Link>
                     <input className="input input-adress" placeholder="Адрес Доставки"></input>
 				<div className="buttons">
-					<Button text="Войти" btnClass='button-primary' imgClass='button-image' imgLogo='user.svg' path="/raw"/>
-					<Button text="Корзина" btnClass='button-cash' imgClass='button-icon' imgLogo='shop.svg' path="/shop"/>
+					<Button text="Войти" btnClass='button-primary' imgClass='button-image' imgLogo='user.svg' path="/raw" haveIcon={true}/>
+					<Button text="Корзина" btnClass='button-cash' imgClass='button-icon' imgLogo='shop.svg' path="/shop" haveIcon={true}/>
 
 				</div>	
         </header>

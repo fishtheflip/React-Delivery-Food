@@ -24,7 +24,7 @@ const Card = ({name, stars, minPrice, timeDelivery, food, id, img, clickFunction
                 </div>
             </div>
         </Link>
-        // onClick={(e)=> clickToRestourant(e) }
+    
     )
 }
 export default Card;

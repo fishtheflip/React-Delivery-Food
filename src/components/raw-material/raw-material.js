@@ -9,20 +9,11 @@ const RawMaterial = () =>{
                 Данный раздел находиться в разработке 🎯
             </label>
         </div>
-
-        {/* <div className="empty-basket-label-mini">
-            <label>
-                    
-            </label>
-            <label>
-                    Для того, чтобы сделать заказ, перейдите на главную страницую
-            </label>
-        </div> */}
         <div className="empty-basket-img">
-            <img  className="empty-basket-logo" src="/img/raw-page.png"/>
+            <img  className="empty-basket-logo" src="/img/raw-page.png" alt="logo"/>
         </div>
         <div className="empty-basket-label">
-            <Button text="Связаться с автором" btnClass='button-dark' imgClass='button-image' imgLogo='contact.png' path="/raw"/>
+            <Button text="Связаться с автором" btnClass='button-dark' imgClass='button-image' imgLogo='contact.png' path="/raw" haveIcon={false}/>
             
         </div>
     </section>

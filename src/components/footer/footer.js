@@ -1,28 +1,25 @@
 import './footer.css';
-import logomain from '../../img/logomain.svg';
-import inst from '../../img/inst.svg';
-import face from '../../img/face.svg';
-import vk from '../../img/vk.svg';
+import {Link} from 'react-router-dom'
 
 const Footer = () =>{
     return (
         <footer className="footer">
-        <div className="container">
-            <div className="footer-block">
-                <img src={logomain} alt="logo" className="logo footer-logo"/>
-                <nav className="footer">
-                    <a href="!#" className="footer-link">Ресторанам</a>
-                    <a href="!#" className="footer-link">Курьерам</a>
-                    <a href="!#" className="footer-link">Пресс-центр</a>
-                    <a href="!#" className="footer-link">Контакты</a>
-                </nav>
-                <div className="social-links">
-                    <a href="!#" className="social-link"><img src={inst} alt="instagram"/></a>
-                    <a href="!#" className="social-link"><img src={face} alt="facebook"/></a>
-                    <a href="!#" className="social-link"><img src={vk} alt="vk"/></a>
+            <div className="container">
+                <div className="footer-block">
+                    <img src="/img/logomain.svg" alt="logo" className="logo footer-logo"/>
+                    <nav className="footer">
+                        <Link to="/raw" className="footer-link">Ресторанам</Link>
+                        <Link to="/raw" className="footer-link">Курьерам</Link>
+                        <Link to="/raw" className="footer-link">Пресс-центр</Link>
+                        <Link to="/raw" className="footer-link">Контакты</Link>
+                    </nav>
+                    <div className="social-links">
+                        <Link to="/raw" className="social-link"><img src="/img/inst.svg" alt="instagram"/></Link>
+                        <Link to="/raw" className="social-link"><img src="/img/face.svg" alt="facebook"/></Link>
+                        <Link to="/raw" className="social-link"><img src="/img/vk.svg" alt="vk"/></Link>
+                    </div>
                 </div>
             </div>
-        </div>
     </footer>
     )
 };

@@ -7,7 +7,7 @@ const RestaurantCard = ({id, img, price, title, food}) =>{
     // title={item.price}
     return(
         <div className="card">
-        <img src={"/img/food/" + img} alt="photo" className="card-image"/>
+        <img src={"/img/food/" + img} alt="food" className="card-image"/>
         <div className="card-text">
             <div className="card-heading">
                 <h3 className="card-title card-title-reg">{title}</h3>
