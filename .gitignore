@@ -8,6 +8,7 @@
 *.jpg
 *.png
 
+src/img
 # testing
 /coverage
 
