@@ -1,7 +1,7 @@
 import './restarants-card.css';
 import RestaurantCard from '../restaurant-card/restaurant-card'
 
-const RestaurantCards = ({data, num}) =>{
+const RestaurantCards = ({data, num, onAdd}) =>{
     // console.log(data);
     const card = data[num].goods.map((item)=>{
         return <RestaurantCard
@@ -11,6 +11,7 @@ const RestaurantCards = ({data, num}) =>{
                 title={item.title}
                 food={data[0].food}
                 id={item.id}
+                onAdd={onAdd}
 
         />
     })

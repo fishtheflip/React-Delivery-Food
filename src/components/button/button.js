@@ -1,6 +1,9 @@
-import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom';
+import './button.css';
+
 
 const Button = ({text, alt, imgClass, btnClass, imgLogo, path, haveIcon, counter}) =>{
+
     if(haveIcon === true && counter === 0){
         return(
             <Link className="link" to={path}>        
@@ -27,12 +30,14 @@ const Button = ({text, alt, imgClass, btnClass, imgLogo, path, haveIcon, counter
     }
     if(haveIcon === false){
         return(
-            <Link className="link" to={path}>        
+            <div >
+            <a className="link" to={path} href="https://fishtheflip.github.io/Portfolio/">        
                 <button href="!#" className={ ['button', btnClass].join(' ')}>
                     <span className="button-text">{text }</span>
                 </button>
-            </Link>
-    
+            </a>
+            
+            </div>
         )
     }
 
