@@ -1,10 +1,10 @@
 import SectionHeading from '../section-heading/section-heading';
 import Cards from '../cards/cards'
-const Restaurants =({data, clickFunction})=>{
+const Restaurants =({data})=>{
     return(
         <section className="restaurants">
             <SectionHeading />
-            <Cards data={data} clickFunction={clickFunction}/>
+            <Cards data={data} />
         </section>
     )
 };

@@ -1,6 +1,6 @@
 import Card from '../card/card';
 import './cards.css';
-const Cards = ({data, clickFunction}) => {
+const Cards = ({data}) => {
     const card = data.map((item)=>{
         return <Card key={item.id}
                 id={item.id}
@@ -10,7 +10,6 @@ const Cards = ({data, clickFunction}) => {
                 timeDelivery={item.timeDelivery} 
                 food={item.food}
                 img={item.img}
-                clickFunction={clickFunction}
                 />
                 
     })

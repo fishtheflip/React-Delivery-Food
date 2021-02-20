@@ -2,7 +2,7 @@ import './restarants-card.css';
 import RestaurantCard from '../restaurant-card/restaurant-card'
 
 const RestaurantCards = ({data, num}) =>{
-    console.log(data);
+    // console.log(data);
     const card = data[num].goods.map((item)=>{
         return <RestaurantCard
                 key={item.id}

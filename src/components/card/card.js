@@ -2,11 +2,11 @@ import star from '../../img/star.svg';
 import './card.css';
 import {Link} from 'react-router-dom';
 
-const Card = ({name, stars, minPrice, timeDelivery, food, id, img, clickFunction}) => {
+const Card = ({name, stars, minPrice, timeDelivery, food, id, img}) => {
     
     return (
-        <Link to={'/' + id} className="card wow fadeInUp" data-wow-delay="0.2s" onClick={(e)=>clickFunction(e)} id={id}>
-            <img  alt="Ciao Pizza" className="card-image" alt='img' src={'img/' + img}/>
+        <Link to={'/' + id} className="card wow fadeInUp" data-wow-delay="0.2s" id={id}>
+            <img  alt="Restorant" className="card-image" alt='img' src={'img/' + img}/>
             <div className="card-text">
                 <div className="card-heading">
                     <h3>{name}</h3>

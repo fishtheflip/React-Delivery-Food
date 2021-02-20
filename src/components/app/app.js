@@ -12,27 +12,25 @@ import {
     } from "react-router-dom";
 import RawMaterial from '../raw-material/raw-material';
 import EmptyShoppingBasket from '../empty-shopping-basket.js/empty-shopping-basket';
+import { connect } from 'react-redux';
 
 
 
 
 
-
-const App = () => {
-    const clickToRestourant = (e) =>{
-        let currentRestourant = e.target;
-        console.log(currentRestourant)
-        
-    }
+const App = (props) => {
+    console.log(props.state.food)
+    const itemCount = props.state.food.length;
+   
     
     return(
         <Router>
             
-                <Container/>
+                <Container counter={itemCount}/>
                 
                 <Switch>
                     <Route exact path="/">
-                            <Main data={data} clickFunction={clickToRestourant}/> 
+                            <Main data={data} /> 
                     </Route>
                     <Route exact path="/shop">
                         <ShoppingBasket />
@@ -48,7 +46,7 @@ const App = () => {
                     <Route  path={'/:id'} 
                             render={({match})=>{
                                 const {id} = match.params
-                                    console.log(match);
+                                    // console.log(match);
                                     return <RestaurantPage data={data} resId={id} />
                             }}>
                     </Route>
@@ -62,4 +60,17 @@ const App = () => {
     )
 };
 
-export default App;
+const mapStateTOProps = (state) => {
+    return {
+        state: state
+    };
+};
+const mapDispatchToProps = (dispatch) =>{
+    return{
+        addItem: () => dispatch({type: 'ADD'}),
+        inc: () => dispatch({type: 'INC_ITEM'}),
+        dec: () => dispatch({type: 'DEC_ITEM'})
+    }
+};
+export default connect(mapStateTOProps, mapDispatchToProps)(App);
+// export default App;
