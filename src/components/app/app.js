@@ -18,7 +18,7 @@ import { connect } from 'react-redux';
 
 
 
-const App = ({state, addItem, inc, dec}) => {
+const App = ({state, addItem, inc, dec, deleteAll}) => {
     console.log(state)
     const itemCount = state.food.length;
 
@@ -27,12 +27,13 @@ const App = ({state, addItem, inc, dec}) => {
         <Router>
             
                 <Container counter={itemCount}/>
+                
                 <Switch>
                     <Route exact path="/">
                             <Main data={data} /> 
                     </Route>
                     <Route exact path="/shop">
-                        <ShoppingBasket shoppingBasketItem={state}/>
+                        <ShoppingBasket shoppingBasketItem={state} deleteAll={deleteAll}/>
                     </Route>
                     <Route exact path="/raw">
                         <RawMaterial/>
@@ -45,7 +46,6 @@ const App = ({state, addItem, inc, dec}) => {
                     <Route  path={'/:id'} 
                             render={({match})=>{
                                 const {id} = match.params
-                                    // console.log(match);
                                     return <RestaurantPage data={data} resId={id} onAdd={addItem}/>
                             }}>
                     </Route>
@@ -74,7 +74,9 @@ const mapDispatchToProps = (dispatch) =>{
         },
         inc: () => dispatch({type: 'INC_ITEM'}),
         dec: () => dispatch({type: 'DEC_ITEM'}),
-        delete_all: () => dispatch({type: 'DELETE_ALL'})
+        deleteAll: () => {
+            console.log("DELETE");
+            dispatch({type: 'DELETE_ALL'})}
     }
 };
 export default connect(mapStateTOProps, mapDispatchToProps)(App);
