@@ -9,8 +9,8 @@ const Card = ({name, stars, minPrice, timeDelivery, food, id, img}) => {
             <img  alt="Restorant" className="card-image" alt='img' src={'img/' + img}/>
             <div className="card-text">
                 <div className="card-heading">
-                    <h3>{name}</h3>
-                    <span> {timeDelivery} минут</span>
+                    <h3 className='card-title'>{name}</h3>
+                    <span className='card-tag tag'> {timeDelivery} минут</span>
                 </div>
                 <div className="card-info">
                     <div className="rating">

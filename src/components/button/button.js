@@ -9,6 +9,19 @@ const Button = ({text, alt, imgClass, btnClass, imgLogo, path, haveIcon, counter
             <Link className="link" to={path}>        
                 <button href="!#" className={ ['button', btnClass].join(' ')}>
                     <img  className={imgClass} src={'/img/' + imgLogo } alt={alt}/>
+                    {/* <i>1</i> */}
+                    <span className="button-text">{text }</span>
+                </button>
+        </Link>
+    
+        )
+    }
+    if(haveIcon === true && counter > 0){
+        return(
+            <Link className="link" to={path}>        
+                <button href="!#" className={ ['button', btnClass].join(' ')}>
+                    {/* <img  className={imgClass} src={'/img/' + imgLogo } alt={alt}/> */}
+                    <i>{counter}</i>
                     <span className="button-text">{text }</span>
                 </button>
         </Link>
@@ -19,7 +32,7 @@ const Button = ({text, alt, imgClass, btnClass, imgLogo, path, haveIcon, counter
         return(
             <Link className="link" to={path}>        
                 <button href="!#" className={ ['button', btnClass].join(' ')}>
-
+                    
                     <img  className={imgClass} src={'/img/' + imgLogo } alt={alt}/>
                     {/* <h1>{counter}</h1> */}
                     <span className="button-text">{text }</span>
