@@ -13,6 +13,7 @@ import {
 import RawMaterial from '../raw-material/raw-material';
 import EmptyShoppingBasket from '../empty-shopping-basket.js/empty-shopping-basket';
 import { connect } from 'react-redux';
+import {useState} from 'react';
 
 
 
@@ -21,16 +22,30 @@ import { connect } from 'react-redux';
 const App = ({state, addItem, inc, dec, deleteAll}) => {
     console.log(state)
     const itemCount = state.food.length;
-
+    const [filterFood, setFilterFood] = useState(data);
+    const allFilter = () =>{
+        setFilterFood(data);
+    }
+    const pizzaFilter = () =>{
+        const pizzaArr = data.filter((e)=>e.food === 'Пицца');
+        setFilterFood(pizzaArr);
+    }
+    const sushiFilter = () =>{
+        const sushiArr = data.filter((e)=>e.food === 'Суши');
+        setFilterFood(sushiArr);
+    }
     
     return(
         <Router>
             
                 <Container counter={itemCount}/>
-                
                 <Switch>
                     <Route exact path="/">
-                            <Main data={data} /> 
+                            <Main data={filterFood}
+                            FilterFunctionAll={allFilter}
+                            FilterFunctionPizza={pizzaFilter}
+                            FilterFunctionSushi={sushiFilter}
+                            /> 
                     </Route>
                     <Route exact path="/shop">
                         <ShoppingBasket shoppingBasketItem={state} deleteAll={deleteAll}/>

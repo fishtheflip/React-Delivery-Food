@@ -23,14 +23,30 @@
 }
 .section-filter{
 	display: flex;
-	align-items:center;
-	justify-content: space-between;
-	background: #F3F3F3;
-	max-width: 500px;
+	
 }
-.filter-block{
-	background: #FFFFFF;
-	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04);
-	border-radius: 5px;
 
+ul{
+	display: flex;
 }
+li{
+	background-color: #f9f9f9;
+	padding: 13px 30px;
+	border-radius: 30px;
+	margin-right: 10px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: background-color 0.1s ease-in-out;
+	color:black;
+	list-style-type: none;
+}
+.active{
+	background-color: #282828;
+	color: #fff;
+}
+/* .filter-block{
+	width: 50px;
+	height: inherit;
+	background: #F9F9F9;
+	border-radius: 30px;
+} */

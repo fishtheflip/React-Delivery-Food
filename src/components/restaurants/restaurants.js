@@ -1,10 +1,14 @@
 import SectionHeading from '../section-heading/section-heading';
 import Cards from '../cards/cards'
-const Restaurants =({data})=>{
+const Restaurants =({data, FilterFunctionPizza, FilterFunctionSushi, FilterFunctionAll})=>{
     return(
         <section className="restaurants">
-            <SectionHeading />
-            <Cards data={data} />
+            <SectionHeading 
+            FilterFunctionPizza={FilterFunctionPizza}
+            FilterFunctionSushi={FilterFunctionSushi}
+            FilterFunctionAll={FilterFunctionAll}
+            />
+            <Cards data={data}  />
         </section>
     )
 };

@@ -1,6 +1,7 @@
 import Card from '../card/card';
 import './cards.css';
 const Cards = ({data}) => {
+    console.log(data);
     const card = data.map((item)=>{
         return <Card key={item.id}
                 id={item.id}

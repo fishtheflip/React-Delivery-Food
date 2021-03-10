@@ -6,7 +6,7 @@ const data = [
     stars: '4,5',
     minPrice: 1200,
     timeDelivery: 40,
-    food: 'Суши',
+    food: 'Пицца',
     pizza: true,
     sushi: false,
     goods: [{title:'Фунги', price:2400, img: 'ciao/fungi.jpg', id: 0, foodId: 50010},{title:'Маргарита', price:1900, img: 'ciao/margo.jpg', id:1, foodId: 50011},{title:'Неаполитана', price:2300, img: 'ciao/neapolitano.jpg', id:2, foodId: 50012},{title:'Пеперони', price:2200, img: 'ciao/pepperoni.jpg', id:3, foodId: 50013},{title:'Росса', price:2400, img: 'ciao/rossa.jpg', id:4, foodId: 50014},{title:'Сырная', price:2200, img: 'ciao/syrnaya.jpg', id:5, foodId: 50015}]
