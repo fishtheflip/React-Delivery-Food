@@ -1,9 +1,10 @@
 import ShoppingBasketHeader from '../shopping-basket-header/shopping-basket-header';
 import ShoppingItem from '../shopping-item/shopping-item';
 import './shopping-basket.css';
-import EmptyShoppingBasket from '../empty-shopping-basket.js/empty-shopping-basket'
+import EmptyShoppingBasket from '../empty-shopping-basket.js/empty-shopping-basket';
+import ShoppingBasketFooter from '../shopping-basket-footer/shopping-ibasket-footer';
 
-const ShoppingBasket = ({shoppingBasketItem, deleteAll}) =>{
+const ShoppingBasket = ({shoppingBasketItem, deleteAll,  onDecrease, onDeleteItem, onAdd}) =>{
     if(shoppingBasketItem.food.length === 0){
         return <EmptyShoppingBasket/>
     }else {}
@@ -11,7 +12,8 @@ const ShoppingBasket = ({shoppingBasketItem, deleteAll}) =>{
         <div className='container'>
             <ShoppingBasketHeader deleteAll={deleteAll}/>
             <div className="line" ></div>
-            <ShoppingItem shoppingBasketItem={shoppingBasketItem}/>
+            <ShoppingItem shoppingBasketItem={shoppingBasketItem}  onDecrease={onDecrease} onDeleteItem={onDeleteItem} onAdd={onAdd} />
+            <ShoppingBasketFooter shoppingBasketItem={shoppingBasketItem}/>
         </div>
     );
 };

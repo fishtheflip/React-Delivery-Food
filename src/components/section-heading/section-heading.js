@@ -7,7 +7,8 @@ const SectionHeading = ({FilterFunctionPizza, FilterFunctionSushi, FilterFunctio
         <div className="section-heading">
             <h1 className="section-title">Рестораны</h1>
             {/* <input type="text" className="input input-search" placeholder="Поиск блюд и ресторанов"/> */}
-            <SectionFilter FilterFunctionPizza={FilterFunctionPizza} 
+            <SectionFilter 
+            FilterFunctionPizza={FilterFunctionPizza} 
             FilterFunctionSushi={FilterFunctionSushi}
             FilterFunctionAll={FilterFunctionAll}
             />

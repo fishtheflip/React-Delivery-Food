@@ -1,0 +1,45 @@
+.shopping-footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.items-amount{
+    
+        display: flex;
+        align-items: center;
+    
+}
+.items-title{
+    
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 27px;
+    letter-spacing: 0.01em;
+    color: #000000
+}
+.items-title-bold{
+    
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+    letter-spacing: 0.01em;
+    color: #000000
+}
+.total-price-title{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 27px;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+.total-price-title-bold{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+    letter-spacing: 0.01em;
+    color: #FE5F1E;
+}

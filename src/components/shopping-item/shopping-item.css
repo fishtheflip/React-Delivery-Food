@@ -43,6 +43,7 @@
 }
 .item-count-block{
     margin-left: 10px;
+    cursor:pointer;
 }
 
 .item-count-label{
@@ -51,4 +52,7 @@
     line-height: 27px;
     letter-spacing: 0.01em;
     color: #000000;
+}
+.item-count-delete{
+    cursor:pointer;
 }

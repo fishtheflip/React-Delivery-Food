@@ -12,6 +12,7 @@ const RestaurantCards = ({data, num, onAdd}) =>{
                 food={data[0].food}
                 id={item.id}
                 onAdd={onAdd}
+                foodId={item.foodId}
 
         />
     })
@@ -24,19 +25,3 @@ const RestaurantCards = ({data, num, onAdd}) =>{
 };
 
 export default RestaurantCards;
-
-// const card = data.map((item)=>{
-//     return <Card key={item.id}
-//             id={item.id}
-//             name={item.name} 
-//             stars={item.stars} 
-//             minPrice={item.minPrice} 
-//             timeDelivery={item.timeDelivery} 
-//             food={item.food}
-//             img={item.img}/>
-// })
-// return(
-//     <div className="cards">
-//         {card}
-//     </div>
-// )

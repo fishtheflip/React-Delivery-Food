@@ -18,7 +18,7 @@ const Card = ({name, stars, minPrice, timeDelivery, food, id, img}) => {
                         {stars}
                     </div>
                     <div className="price">
-                        От {minPrice} тг
+                        От {minPrice} ₸
                     </div>
                     <div className="category">{food}</div>
                 </div>

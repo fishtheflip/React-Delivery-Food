@@ -14,15 +14,21 @@ import RawMaterial from '../raw-material/raw-material';
 import EmptyShoppingBasket from '../empty-shopping-basket.js/empty-shopping-basket';
 import { connect } from 'react-redux';
 import {useState} from 'react';
+import { v4 as uuidv4 } from 'uuid';
+import './app.css'
 
 
 
 
 
-const App = ({state, addItem, inc, dec, deleteAll}) => {
+
+const App = ({state, addItem,  onDecrease,onDeleteItem, deleteAll}) => {
     console.log(state)
-    const itemCount = state.food.length;
+    const itemCount = state.count;
+    
+    
     const [filterFood, setFilterFood] = useState(data);
+
     const allFilter = () =>{
         setFilterFood(data);
     }
@@ -37,39 +43,46 @@ const App = ({state, addItem, inc, dec, deleteAll}) => {
     
     return(
         <Router>
-            
-                <Container counter={itemCount}/>
-                <Switch>
-                    <Route exact path="/">
-                            <Main data={filterFood}
-                            FilterFunctionAll={allFilter}
-                            FilterFunctionPizza={pizzaFilter}
-                            FilterFunctionSushi={sushiFilter}
-                            /> 
-                    </Route>
-                    <Route exact path="/shop">
-                        <ShoppingBasket shoppingBasketItem={state} deleteAll={deleteAll}/>
-                    </Route>
-                    <Route exact path="/raw">
-                        <RawMaterial/>
-                    </Route>
-                    <Route exact path="/empty">
-                        <EmptyShoppingBasket/>
-                    </Route>
+                <div className="app-main">
+                    <Container counter={itemCount}/>
+                    <Switch>
+                        <Route exact path="/">
+                                <Main data={filterFood}
+                                FilterFunctionAll={allFilter}
+                                FilterFunctionPizza={pizzaFilter}
+                                FilterFunctionSushi={sushiFilter}
+                                /> 
+                        </Route>
+                        <Route exact path="/shop">
+                            <ShoppingBasket 
+                            shoppingBasketItem={state} 
+                            deleteAll={deleteAll} 
+                            
+                            onDecrease={onDecrease}
+                            onDeleteItem={onDeleteItem}
+                            onAdd={addItem}/>
+                        </Route>
+                        <Route exact path="/raw">
+                            <RawMaterial/>
+                        </Route>
+                        <Route exact path="/empty">
+                            <EmptyShoppingBasket/>
+                        </Route>
 
 
-                    <Route  path={'/:id'} 
-                            render={({match})=>{
-                                const {id} = match.params
-                                    return <RestaurantPage data={data} resId={id} onAdd={addItem}/>
-                            }}>
-                    </Route>
+                        <Route  path={'/:id'} 
+                                render={({match})=>{
+                                    const {id} = match.params
+                                        return <RestaurantPage data={data} resId={id} onAdd={addItem}/>
+                                }}>
+                        </Route>
 
                     
-            </Switch>
-            <Footer/>
+                </Switch>
+                </div>
+                <Footer/>
 
-                
+            
         </Router>
     )
 };
@@ -81,18 +94,27 @@ const mapStateTOProps = (state) => {
 };
 const mapDispatchToProps = (dispatch) =>{
     return{
-        addItem: (id, title, price) => {
+        addItem: (id, title, price, foodId) => {
             
-            const payload = [id, title, price];
-            console.log(payload);
+            
+            const payload = [id, title, price, foodId];
+            
             dispatch({type: 'ADD', payload})
         },
-        inc: () => dispatch({type: 'INC_ITEM'}),
-        dec: () => dispatch({type: 'DEC_ITEM'}),
+
+        onDecrease: (id) => {
+            const payload = id;
+            dispatch({type: 'DEC_ITEM', payload})
+    },
+
+        onDeleteItem:(id)=>{
+            const payload = id;
+            dispatch({type: 'DEL_ITEM', payload})
+        },
+
         deleteAll: () => {
-            console.log("DELETE");
+            
             dispatch({type: 'DELETE_ALL'})}
     }
 };
 export default connect(mapStateTOProps, mapDispatchToProps)(App);
-// export default App;
