@@ -1,9 +1,11 @@
 import './restaurant-card.css';
+
+
 const RestaurantCard = ({id, img, price, title, food, onAdd, foodId}) =>{
 
     return(
         <div className="card" id={id}>
-        <img src={"/img/food/" + img} alt="food" className="card-image"/>
+        <img src={"/img/food/" + img} alt="food" className="card-image-restaurant"/>
         <div className="card-text">
             <div className="card-heading">
                 <h3 className="card-title card-title-reg">{title}</h3>

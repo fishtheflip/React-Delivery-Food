@@ -20,3 +20,10 @@
 	line-height: 46px;
 	color: #302C34;
 }
+@media ( max-width: 1366px){
+    .promo{
+        max-width: 960px;
+        margin: auto;
+       
+    }
+}

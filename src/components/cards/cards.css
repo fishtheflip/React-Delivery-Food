@@ -4,3 +4,11 @@
 	justify-content: space-between;
 	flex-wrap: wrap;
 }
+
+@media ( max-width: 1366px){
+    .cards{
+        max-width: 960px;
+        margin: auto;
+       
+    }
+}

@@ -1,4 +1,3 @@
-import Promo from '../promo/promo';
 import './shopping-basket-footer.css';
 
 const ShoppingBasketFooter =({shoppingBasketItem})=>{

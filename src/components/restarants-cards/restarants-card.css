@@ -4,3 +4,10 @@
 	justify-content: space-between;
 	flex-wrap: wrap;
 }
+
+@media ( max-width: 1366px){
+	.section-heading{
+        max-width: 960px;
+		margin-top: 34px;
+    }
+}

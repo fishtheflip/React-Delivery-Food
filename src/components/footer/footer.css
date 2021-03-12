@@ -1,7 +1,7 @@
 
 .container {
 	max-width: 1200px;
-	margin: auto;	
+	margin: auto;
 }
 .footer{
 	padding: 60px 0;
@@ -35,4 +35,11 @@
 }
 .social-link:not(:last-child){
 	margin-right: 21px;
+}
+
+@media ( max-width: 1366px){
+	.footer{
+        max-width: 960px;
+        margin: auto;
+    }
 }
