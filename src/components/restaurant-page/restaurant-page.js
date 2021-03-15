@@ -2,6 +2,7 @@ import RestaurantPageHeader from '../restaurant-page-header/restaurant-page-head
 import RestaurantCards from '../restarants-cards/restarants-card'
 
 const RestaurantPage = ({data, resId, onAdd}) =>{
+    console.log('GOOT', resId)
     return(
         <div className='main'>
             <div className='container'>

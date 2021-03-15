@@ -1,6 +1,7 @@
 import './restaurant-page-header.css';
 
 const RestaurantPageHeader = ({data, num}) =>{
+    
     return (
         <div className="section-heading">
         <h1 className="section-title">{data[num].name}</h1>

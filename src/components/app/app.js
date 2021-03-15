@@ -23,7 +23,8 @@ import './app.css';
 
 
 const App = ({state, addItem,  onDecrease,onDeleteItem, deleteAll}) => {
-    console.log(state)
+    
+    console.log(data);
     const itemCount = state.count;
     
     
@@ -70,12 +71,12 @@ const App = ({state, addItem,  onDecrease,onDeleteItem, deleteAll}) => {
                         </Route>
 
 
-                        <Route  path={'/:id'} 
+                        {/* <Route  path={'/:id'} 
                                 render={({match})=>{
                                     const {id} = match.params
                                         return <RestaurantPage data={data} resId={id} onAdd={addItem}/>
                                 }}>
-                        </Route>
+                        </Route> */}
 
                     
                 </Switch>
@@ -86,6 +87,7 @@ const App = ({state, addItem,  onDecrease,onDeleteItem, deleteAll}) => {
         </Router>
     )
 };
+
 
 const mapStateTOProps = (state) => {
     return {
