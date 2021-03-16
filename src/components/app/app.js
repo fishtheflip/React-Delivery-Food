@@ -5,7 +5,7 @@ import data from '../../data/data';
 import RestaurantPage from '../restaurant-page/restaurant-page';
 import ShoppingBasket from '../shopping-basket/shopping-basket';
 import {
-  BrowserRouter as Router,
+    HashRouter as Router,
   Switch,
   Route
   
@@ -71,12 +71,12 @@ const App = ({state, addItem,  onDecrease,onDeleteItem, deleteAll}) => {
                         </Route>
 
 
-                        {/* <Route  path={'/:id'} 
+                        <Route  path={'/:id'} 
                                 render={({match})=>{
                                     const {id} = match.params
                                         return <RestaurantPage data={data} resId={id} onAdd={addItem}/>
                                 }}>
-                        </Route> */}
+                        </Route>
 
                     
                 </Switch>
