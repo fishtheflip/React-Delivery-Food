@@ -5,7 +5,7 @@ import data from '../../data/data';
 import RestaurantPage from '../restaurant-page/restaurant-page';
 import ShoppingBasket from '../shopping-basket/shopping-basket';
 import {
-    HashRouter as Router,
+    HashRouter  as Router,
   Switch,
   Route
   
