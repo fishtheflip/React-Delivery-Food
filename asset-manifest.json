@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/React-Delivery-Food/static/css/main.345b88f0.chunk.css",
+    "main.css": "/React-Delivery-Food/static/css/main.e5f6e1f2.chunk.css",
     "main.js": "/React-Delivery-Food/static/js/main.cdbf51f6.chunk.js",
     "main.js.map": "/React-Delivery-Food/static/js/main.cdbf51f6.chunk.js.map",
     "runtime-main.js": "/React-Delivery-Food/static/js/runtime-main.e400c935.js",
@@ -8,7 +8,7 @@
     "static/js/2.e2010e15.chunk.js": "/React-Delivery-Food/static/js/2.e2010e15.chunk.js",
     "static/js/2.e2010e15.chunk.js.map": "/React-Delivery-Food/static/js/2.e2010e15.chunk.js.map",
     "index.html": "/React-Delivery-Food/index.html",
-    "static/css/main.345b88f0.chunk.css.map": "/React-Delivery-Food/static/css/main.345b88f0.chunk.css.map",
+    "static/css/main.e5f6e1f2.chunk.css.map": "/React-Delivery-Food/static/css/main.e5f6e1f2.chunk.css.map",
     "static/js/2.e2010e15.chunk.js.LICENSE.txt": "/React-Delivery-Food/static/js/2.e2010e15.chunk.js.LICENSE.txt",
     "static/media/header.css": "/React-Delivery-Food/static/media/search.7b9a6b37.svg",
     "static/media/promo.css": "/React-Delivery-Food/static/media/promoimg.63eb47c0.png",
@@ -17,7 +17,7 @@
   "entrypoints": [
     "static/js/runtime-main.e400c935.js",
     "static/js/2.e2010e15.chunk.js",
-    "static/css/main.345b88f0.chunk.css",
+    "static/css/main.e5f6e1f2.chunk.css",
     "static/js/main.cdbf51f6.chunk.js"
   ]
 }
