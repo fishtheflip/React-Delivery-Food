@@ -9,7 +9,7 @@ const RawMaterial = () =>{
     return(
         <section className="empty-basket-section">
         <div className="empty-basket-label">
-            <label>
+            <label className="empty-basket-label-text">
                 Данный раздел находиться в разработке 🎯
             </label>
         </div>

@@ -66,3 +66,11 @@
         margin: auto;
     }
 }
+@media ( max-width: 578px){
+    .shopping-footer{
+        width: 90%; 
+    }
+    .items-amount{
+        visibility: hidden;
+    }
+}

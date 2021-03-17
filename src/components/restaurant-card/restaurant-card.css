@@ -92,3 +92,9 @@ margin-left: 30px;
 		line-height: 28px;
 	}
 }
+
+@media ( max-width: 578px){
+	.dynamic-card{
+		flex-basis: 100%;
+	}
+}	

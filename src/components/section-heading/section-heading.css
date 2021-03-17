@@ -60,4 +60,14 @@ li{
         margin: auto;
 	}
 }
-
+@media ( max-width: 578px){
+	.section-heading{
+		width: 90%;
+		flex-direction: column;
+	}
+	.section-title{
+		font-size: 26px;
+		line-height: 36px;
+		
+	}
+}

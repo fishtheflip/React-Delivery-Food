@@ -60,3 +60,18 @@
        
     }
 }
+@media (max-width: 578px){
+    .shopping-header{
+        width: 90%;
+    }
+    .shop-title{
+        display: none;
+    }
+    .logo-shopping-header{
+        display: none;
+    }
+    .delete-title{
+        display: none;
+    }
+
+}

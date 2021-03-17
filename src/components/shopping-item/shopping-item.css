@@ -75,3 +75,29 @@
        
     }
 }
+
+@media ( max-width: 768px){
+    .item-section{
+        max-width: 560px;
+        margin: auto;
+        margin-top: 30px;
+    }
+    .item-description{
+        font-size: 18px;
+    }
+    .item-price{
+        font-size: 18px;
+    }
+    .item-count-label{
+        font-size: 18px;
+    }
+}
+@media ( max-width: 578px){
+    .item-section{
+        width: 90%;
+    }
+    .mini-img{
+        display: none;
+    }
+ 
+}

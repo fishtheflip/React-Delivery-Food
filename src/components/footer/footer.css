@@ -53,4 +53,13 @@
 	.footer{
         max-width: 560px;
     }
+	.footer-link{
+		display: none;
+	}
+}
+
+@media ( max-width: 578px){
+	.footer{
+        width: 90%;
+    }
 }
