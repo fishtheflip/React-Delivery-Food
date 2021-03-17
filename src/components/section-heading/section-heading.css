@@ -54,4 +54,10 @@ li{
 		line-height: 38px;
 	}
 }
+@media ( max-width: 768px){
+	.section-heading{
+		width: 560px;
+        margin: auto;
+	}
+}
 

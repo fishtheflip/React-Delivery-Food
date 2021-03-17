@@ -31,7 +31,7 @@
     .promo{
         max-width: 750px;
         margin: auto;
-		background: #FFF1B8 url(../../img/little-logo.png) no-repeat top right -200px;
+		background: #FFF1B8 url(../../img/promoimg.png) no-repeat top right -200px;
     }
 	.promo-title{
 		font-size: 31px;
@@ -48,4 +48,11 @@
 		font-size: 31px;
 		line-height: 40px;
 	}
+}
+@media ( max-width: 578px){
+    .promo{
+        width: 90%;
+		background-image: none;
+    }
+	
 }

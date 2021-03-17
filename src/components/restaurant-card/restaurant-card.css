@@ -81,3 +81,14 @@ margin-left: 30px;
 	}
 	
 }
+
+@media ( max-width: 768px){
+	.dynamic-card-title-reg{
+		font-size: 20px;
+		line-height: 28px;
+	}
+	.dynamic-card-price-bold{
+		font-size: 16px;
+		line-height: 28px;
+	}
+}

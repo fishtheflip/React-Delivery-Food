@@ -48,3 +48,9 @@
         max-width: 750px;
     }
 }
+
+@media ( max-width: 768px){
+	.footer{
+        max-width: 560px;
+    }
+}
