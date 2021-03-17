@@ -44,4 +44,12 @@
         margin: auto;
        
     }
+    .shop-title{
+        font-size: 26px;
+        line-height: 30px;
+    }
+    .logo-shopping-header{
+        width: 25px;
+        height: 25px;
+    }
 }

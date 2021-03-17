@@ -31,6 +31,21 @@
     .promo{
         max-width: 750px;
         margin: auto;
-		background: #FFF1B8 url(../../img/promoimg.png) no-repeat top right -400px;
+		background: #FFF1B8 url(../../img/little-logo.png) no-repeat top right -200px;
     }
+	.promo-title{
+		font-size: 31px;
+		line-height: 40px;
+	}
+}
+@media ( max-width: 768px){
+    .promo{
+        max-width: 560px;
+        margin: auto;
+		background: #FFF1B8 url(../../img/little-logo.png) no-repeat center right  ;
+    }
+	.promo-title{
+		font-size: 31px;
+		line-height: 40px;
+	}
 }

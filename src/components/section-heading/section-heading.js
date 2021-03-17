@@ -5,8 +5,7 @@ const SectionHeading = ({FilterFunctionPizza, FilterFunctionSushi, FilterFunctio
     return(
         <React.Fragment>
         <div className="section-heading">
-            <h1 className="section-title">Рестораны</h1>
-            {/* <input type="text" className="input input-search" placeholder="Поиск блюд и ресторанов"/> */}
+            <h1 className="section-heading-title">Рестораны</h1>
             <SectionFilter 
             FilterFunctionPizza={FilterFunctionPizza} 
             FilterFunctionSushi={FilterFunctionSushi}

@@ -4,7 +4,7 @@ const ShoppingBasketHeader = ({deleteAll}) =>{
     return(
         <section className="shopping-header">
             <div className="main-shop">
-                <img src={'img/main-shop.svg'} alt="Logo" className="logo"/>
+                <img src={'img/main-shop.svg'} alt="Logo" className="logo logo-shopping-header"/>
                 <h2 className="shop-title">Корзина</h2>
             </div>
             

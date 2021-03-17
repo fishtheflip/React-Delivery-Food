@@ -46,3 +46,13 @@
 		margin-bottom: 40px;
     }
 }
+@media ( max-width: 768px){
+    .header{
+        max-width: 560px;
+		margin: auto;
+		margin-bottom: 40px;
+    }
+	.input-adress{
+		display: none;
+	}
+}

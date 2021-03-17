@@ -4,7 +4,7 @@
 	margin-bottom: 44px;
 	justify-content: space-between;
 }
-.section-title{
+.section-heading-title{
 	font-style: normal;
 	font-weight: bold;
 	font-size: 36px;
@@ -12,6 +12,29 @@
 	color: #000000;
 	margin: 0;
 	margin-right: 30px;
+}
+
+.section-filter{
+	display: flex;
+	
+}
+ul{
+	display: flex;
+}
+li{
+	background-color: #f9f9f9;
+	padding: 13px 30px;
+	border-radius: 30px;
+	margin-right: 10px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: background-color 0.1s ease-in-out;
+	color:black;
+	list-style-type: none;
+}
+.active{
+	background-color: #282828;
+	color: #fff;
 }
 
 @media ( max-width: 1366px){
@@ -26,8 +49,9 @@
         width: 750px;
         margin: auto;
     }
-	.section-title{
-		margin-right: 20px;
+	.section-heading-title{
+		font-size: 30px;
+		line-height: 38px;
 	}
 }
 
