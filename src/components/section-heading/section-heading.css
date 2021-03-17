@@ -21,4 +21,13 @@
        
     }
 }
+@media ( max-width: 992px){
+    .section-heading{
+        width: 750px;
+        margin: auto;
+    }
+	.section-title{
+		margin-right: 20px;
+	}
+}
 

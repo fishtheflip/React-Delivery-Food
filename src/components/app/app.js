@@ -73,6 +73,7 @@ const App = ({state, addItem,  onDecrease,onDeleteItem, deleteAll}) => {
 
                         <Route  path={'/:id'} 
                                 render={({match})=>{
+                                    console.log(match)
                                     const {id} = match.params
                                         return <RestaurantPage data={data} resId={id} onAdd={addItem}/>
                                 }}>

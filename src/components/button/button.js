@@ -8,7 +8,7 @@ const Button = ({text, alt, imgClass, btnClass, imgLogo, path, haveIcon, counter
         return(
             <Link className="link" to={path}>        
                 <button href="!#" className={ ['button', btnClass].join(' ')}>
-                    <img  className={imgClass} src={'/img/' + imgLogo } alt={alt}/>
+                    <img  className={imgClass} src={'img/' + imgLogo } alt={alt}/>
                     
                     <span className="button-text">{text }</span>
                 </button>
@@ -33,8 +33,8 @@ const Button = ({text, alt, imgClass, btnClass, imgLogo, path, haveIcon, counter
             <Link className="link" to={path}>        
                 <button href="!#" className={ ['button', btnClass].join(' ')}>
                     
-                    <img  className={imgClass} src={'/img/' + imgLogo } alt={alt}/>
-                    {/* <h1>{counter}</h1> */}
+                    <img  className={imgClass} src={'img/' + imgLogo } alt={alt}/>
+                    
                     <span className="button-text">{text }</span>
                 </button>
         </Link>

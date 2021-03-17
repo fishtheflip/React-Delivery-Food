@@ -6,7 +6,7 @@ const Header = ({counter}) => {
     return(
         <header className="header">
             		<Link to="/" className="jump">
-					    <img src={'/img/logomain.svg'} alt="Logo" className="logo"/>
+					    <img src={'img/logomain.svg'} alt="Logo" className="logo"/>
 				    </Link>
                     <input className="input input-adress" placeholder="Адрес Доставки"></input>
 				<div className="buttons">

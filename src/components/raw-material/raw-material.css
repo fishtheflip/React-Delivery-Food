@@ -13,6 +13,9 @@
     margin: 0 auto;
 
 }
+.empty-basket-shift{
+    margin-bottom: 20px;
+}
 .empty-basket-label-mini{
     display: flex;
     flex-direction: column;

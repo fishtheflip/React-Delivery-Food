@@ -27,3 +27,10 @@
        
     }
 }
+@media ( max-width: 992px){
+    .promo{
+        max-width: 750px;
+        margin: auto;
+		background: #FFF1B8 url(../../img/promoimg.png) no-repeat top right -400px;
+    }
+}
