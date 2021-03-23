@@ -1,5 +1,7 @@
 ![Delivery Food](https://i.ibb.co/R4st0t1/delfood.jpg)
 
+https://fishtheflip.github.io/React-Delivery-Food/
+
 Delivery Food is the SPA. The application is written with React.js. Redux is used as the state management system.
 Page routing is made using the react-router-dom library. The page also includes a client script is the animate.js library for animating some elements.
 Implemented shopping basket and product filter. The public folder contains photos, since the project is immediately uploaded to the hosting using git-hub pages.
